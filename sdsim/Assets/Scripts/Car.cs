@@ -17,7 +17,9 @@ public class Car : MonoBehaviour, ICar {
 	public float requestSteering = 0f;
 
 	public Vector3 acceleration = Vector3.zero;
+	public Vector3 angAcceleration = Vector3.zero;
 	public Vector3 prevVel = Vector3.zero;
+	public Vector3 prevAngVel = Vector3.zero;
 
 	public Vector3 startPos;
 	public Quaternion startRot;
@@ -155,6 +157,11 @@ public class Car : MonoBehaviour, ICar {
 		return acceleration;
 	}
 
+	public Vector3 GetAngAccel()
+	{
+		return angAcceleration;
+	}
+
 	public float GetOrient ()
 	{
 		Vector3 dir = transform.forward;
@@ -232,7 +239,11 @@ public class Car : MonoBehaviour, ICar {
 			wc.brakeTorque = 400f * brake;
 		}
 
-		acceleration = rb.velocity - prevVel;
+		acceleration = (rb.velocity - prevVel) / Time.deltaTime;
+		prevVel = rb.velocity;
+		angAcceleration = (rb.angularVelocity - prevAngVel) / Time.deltaTime;
+		prevAngVel = rb.angularVelocity;
+
 	}
 
 	void FlipUpright()
