@@ -95,6 +95,8 @@ namespace tk
 
         void SendTelemetry()
         {
+            Vector3 acceleration, angAcceleration;
+
             if (client == null)
                 return;
 
@@ -113,6 +115,18 @@ namespace tk
             json.AddField("pos_x", tm.position.x);
             json.AddField("pos_y", tm.position.y);
             json.AddField("pos_z", tm.position.z);
+
+            acceleration = car.GetAccel();
+            json.AddField("acc_x", acceleration.x);
+            json.AddField("acc_y", acceleration.y);
+            json.AddField("acc_z", acceleration.z);
+
+            angAcceleration = car.GetAccel();
+            json.AddField("ang_acc_x", acceleration.x);
+            json.AddField("ang_acc_y", acceleration.y);
+            json.AddField("ang_acc_z", acceleration.z);
+
+
 
             json.AddField("time", Time.timeSinceLevelLoad);
 
