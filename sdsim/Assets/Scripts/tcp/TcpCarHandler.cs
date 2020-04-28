@@ -121,7 +121,7 @@ namespace tk
             json.AddField("acc_y", acceleration.y);
             json.AddField("acc_z", acceleration.z);
 
-            angAcceleration = car.GetAccel();
+            angAcceleration = car.GetAngAccel();
             json.AddField("ang_acc_x", acceleration.x);
             json.AddField("ang_acc_y", acceleration.y);
             json.AddField("ang_acc_z", acceleration.z);
