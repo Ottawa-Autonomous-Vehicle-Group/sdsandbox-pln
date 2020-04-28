@@ -33,6 +33,11 @@ public void LoadGeneratedTrackScene()
 public void LoadIronCar()
 {
     SceneManager.LoadSceneAsync(5);
+    }
+
+public void LoadChicane()
+{
+    SceneManager.LoadSceneAsync(6);
 }
 
     public void QuitApplication()

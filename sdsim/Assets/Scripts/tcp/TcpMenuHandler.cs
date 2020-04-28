@@ -117,6 +117,10 @@ namespace tk
             {
                 loader.LoadIronCar();
             }
+            else if (scene_name == "chicane_track")
+            {
+                loader.LoadChicane();
+            }
         }
         
         void OnQuitApp(JSONObject json)
