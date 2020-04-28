@@ -30,7 +30,12 @@ public void LoadGeneratedTrackScene()
     SceneManager.LoadSceneAsync(4);
 }
 
-public void QuitApplication()
+public void LoadIronCar()
+{
+    SceneManager.LoadSceneAsync(5);
+}
+
+    public void QuitApplication()
 {
     Application.Quit();
 }
