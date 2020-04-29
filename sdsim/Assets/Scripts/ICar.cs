@@ -34,6 +34,8 @@ public interface ICar
 
 	Vector3 GetAccel();
 
+	Vector3 GetAngAccel();
+
 
 	//mark the current activity for partial selections when creating training sets later.
 	string GetActivity();

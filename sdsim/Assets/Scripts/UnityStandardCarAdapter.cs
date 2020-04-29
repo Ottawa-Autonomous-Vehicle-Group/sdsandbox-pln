@@ -13,6 +13,8 @@ public class UnityStandardCarAdapter : MonoBehaviour, ICar {
 	float handBrake = 0.0f;
 	Vector3 vel = Vector3.zero;
 	Vector3 accel = Vector3.zero;
+	Vector3 angAccel = Vector3.zero;
+
 	public string activity = "keep_lane";
 
 	Rigidbody rb;
@@ -56,7 +58,9 @@ public class UnityStandardCarAdapter : MonoBehaviour, ICar {
 
 	public Vector3 GetAccel() { return accel; }
 
-    public void SetMaxSteering(float val)
+	public Vector3 GetAngAccel() { return angAccel; }
+
+	public void SetMaxSteering(float val)
     {
         MaximumSteerAngle = val;
     }
