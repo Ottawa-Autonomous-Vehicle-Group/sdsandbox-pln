@@ -98,6 +98,7 @@ MonoBehaviour:
   splitScreenCamLeft: {fileID: 0}
   splitScreenCamRight: {fileID: 0}
   splitScreenPanel: {fileID: 0}
+  cars: []
 --- !u!1 &1612042024290732
 GameObject:
   m_ObjectHideFlags: 0
@@ -229,7 +230,7 @@ MonoBehaviour:
   doChangeLanes: 1
   smoothPathIter: 0
   doShowPath: 0
-  pathToLoad: sparkfun_avc
+  pathToLoad: rpi
   roadBuilder: {fileID: 114798992687500020}
   semanticSegRoadBuilder: {fileID: 0}
   laneChTrainer: {fileID: 0}
@@ -279,3 +280,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab4507130b5195624b7ace76b90a6c68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  raceBanner: {fileID: 0}
+  raceBannerText: {fileID: 0}
+  objToDisable: []
+  camSwitchers: []
+  raceStatusPrefab: {fileID: 0}
+  raceStatusPanel: {fileID: 0}
+  raceSummary: {fileID: 0}
+  raceCamSwitcher: {fileID: 0}
+  bRaceActive: 0
+  race_num_laps: 1

@@ -78,6 +78,7 @@ namespace tk
             scenes.Add("warehouse");
             scenes.Add("sparkfun_avc");
             scenes.Add("generated_track");
+            scenes.Add("ironcar_track");
 
             JSONObject json = new JSONObject(JSONObject.Type.OBJECT);
             json.AddField("scene_names", scenes);
@@ -111,6 +112,14 @@ namespace tk
             else if (scene_name == "generated_track")
             {
                 loader.LoadGeneratedTrackScene();
+            }
+            else if (scene_name == "ironcar_track")
+            {
+                loader.LoadIronCar();
+            }
+            else if (scene_name == "chicane_track")
+            {
+                loader.LoadChicane();
             }
         }
         
