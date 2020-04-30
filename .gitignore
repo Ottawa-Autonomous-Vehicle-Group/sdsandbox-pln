@@ -10,8 +10,8 @@ sdsim/Temp
 sdsim/.vs
 sdsim/Build
 dataset
-sdsim/Logs
-sdsim/Packages
+sdsim/Logs/*
+sdsim/Packages/*
 sdsim/ProjectSettings/PresetManager.asset
 sdsim/ProjectSettings/VFXManager.asset
 sdsim/ProjectSettings/XRSettings.asset
