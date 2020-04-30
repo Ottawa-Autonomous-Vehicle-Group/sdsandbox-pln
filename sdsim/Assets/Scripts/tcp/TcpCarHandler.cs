@@ -126,6 +126,10 @@ namespace tk
             json.AddField("ang_acc_y", acceleration.y);
             json.AddField("ang_acc_z", acceleration.z);
 
+            json.AddField("wheelencoder1", UnityEngine.Random.Range(0, 10));
+            json.AddField("wheelencoder2", UnityEngine.Random.Range(0, 10));
+            json.AddField("wheelencoder3", UnityEngine.Random.Range(0, 10));
+            json.AddField("wheelencoder4", UnityEngine.Random.Range(0, 10));
 
 
             json.AddField("time", Time.timeSinceLevelLoad);
