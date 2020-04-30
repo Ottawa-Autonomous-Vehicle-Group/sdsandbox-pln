@@ -22,7 +22,6 @@ Original README.md file: https://github.com/Ottawa-Autonomous-Vehicle-Group/sdsa
 
 
 
-
 ## Credits (sdsandbox)
 
 Tawn Kramer  
