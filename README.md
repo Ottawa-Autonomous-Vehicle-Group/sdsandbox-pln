@@ -1,6 +1,6 @@
 # SdSandbox-pln
 
-Self Driving Car Sandbox - Parking Lot Nerds (PLN) Custom versio3dd
+Self Driving Car Sandbox - Parking Lot Nerds (PLN) Custom version
 
 
 ## Summary
@@ -19,6 +19,22 @@ Original README.md file: https://github.com/Ottawa-Autonomous-Vehicle-Group/sdsa
    * linear acceleration
    * angular acceleration
    * wheel encoders
+
+
+## Installing Unity and self-driving simulator
+
+1. Download and install Unity Hub: https://unity3d.com/get-unity/download.  Using the Unity Hub is recommended since it makes it easier to switch between Unity Editor versions.
+
+2. Run Unity Hub and follow instructions to generate a license file.
+
+3. Select "Installs" in left hand menu, and then select "Add" button at top right.  Choose the version of Unity Editor to install.  Latest at time of writing is Unity 2019.3.12.f1.
+
+4. After the Unity Editor has been install, select "Projects" in the left hand menu.  Now select "Add" in top right, and browse to the "sdsim" folder in this repo. This is the Unity source code for the Self Driving Sandbox Simulator.  If you are using a newer version of the Unity Editor, you will be asked to convert the project to this new version.
+
+5. After the conversion is complete, you will be brought into the Unity Editor window.  
+
+Happy Developing!!!
+
 
 
 
