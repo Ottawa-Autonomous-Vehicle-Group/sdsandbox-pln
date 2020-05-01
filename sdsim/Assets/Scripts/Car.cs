@@ -26,6 +26,8 @@ public class Car : MonoBehaviour, ICar {
 
 	public float length = 1.7f;
 
+	public Vector4 wheelEncoder; // pln
+
 	Rigidbody rb;
 
 	//for logging
@@ -162,6 +164,11 @@ public class Car : MonoBehaviour, ICar {
 		return angAcceleration;
 	}
 
+	public Vector4 GetEncoder() // pln
+	{
+		return wheelEncoder;
+	}
+
 	public float GetOrient ()
 	{
 		Vector3 dir = transform.forward;
@@ -267,6 +274,8 @@ public class Car : MonoBehaviour, ICar {
 
 			tm.position = pos;
 			tm.rotation = rot;
+
+			wheelEncoder[i] = rot[0]; // pln
 		}
 	}
 

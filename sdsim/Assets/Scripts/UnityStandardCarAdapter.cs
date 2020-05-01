@@ -22,6 +22,8 @@ public class UnityStandardCarAdapter : MonoBehaviour, ICar {
 	public Vector3 startPos;
 	public Quaternion startRot;
 
+	public Vector4 myecoder; // pln
+
 	void Awake()
 	{
 		rb = unityCar.GetComponent<Rigidbody>();
@@ -69,6 +71,8 @@ public class UnityStandardCarAdapter : MonoBehaviour, ICar {
     {
         return MaximumSteerAngle;
     }
+
+	public Vector4 GetEncoder() { return myecoder; } // pln
 
 	//Save and restore State
 	public void SavePosRot() 

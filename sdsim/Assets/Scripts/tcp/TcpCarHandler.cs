@@ -96,6 +96,7 @@ namespace tk
         void SendTelemetry()
         {
             Vector3 acceleration, angAcceleration;
+            Vector4 myencoder; // pln
 
             if (client == null)
                 return;
@@ -116,6 +117,7 @@ namespace tk
             json.AddField("pos_y", tm.position.y);
             json.AddField("pos_z", tm.position.z);
 
+
             acceleration = car.GetAccel();
             json.AddField("acc_x", acceleration.x);
             json.AddField("acc_y", acceleration.y);
@@ -126,11 +128,11 @@ namespace tk
             json.AddField("ang_acc_y", angAcceleration.y);
             json.AddField("ang_acc_z", angAcceleration.z);
 
-            json.AddField("wheelEncoder1", UnityEngine.Random.Range((float) 0.0, (float) 10.0));
-            json.AddField("wheelEncoder2", UnityEngine.Random.Range((float) 0.0, (float) 10.0));
-            json.AddField("wheelEncoder3", UnityEngine.Random.Range((float) 0.0, (float) 10.0));
-            json.AddField("wheelEncoder4", UnityEngine.Random.Range((float) 0.0, (float) 10.00));
-
+            myencoder = car.GetEncoder(); //pln  
+            json.AddField("wheelEncoderLR", myencoder[0]);
+            json.AddField("wheelEncoderLF", myencoder[1]);
+            json.AddField("wheelEncoderRF", myencoder[2]);
+            json.AddField("wheelEncoderRR", myencoder[3]);
 
             json.AddField("time", Time.timeSinceLevelLoad);
 
