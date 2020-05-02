@@ -39,6 +39,10 @@ public void LoadChicane()
 {
     SceneManager.LoadSceneAsync(6);
 }
+public void LoadCircleScene()
+{
+    SceneManager.LoadSceneAsync(7);
+}
 
     public void QuitApplication()
 {
