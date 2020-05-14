@@ -8,7 +8,8 @@ public class RaceStatus : MonoBehaviour
     public LapTimer timer;
     public Text userName;
     public Text currentLapTime;
-    public Text bestLapTime;
+    public Text bestLapTime; 
+    public Text lastLapTime;
     public Text iLap;
     public Text dqNot;
 
@@ -51,6 +52,15 @@ public class RaceStatus : MonoBehaviour
             else
             {
                 bestLapTime.text = "--:--";
+            }
+
+            if (timer.lastTimeDisp.gameObject.activeSelf)
+            {
+                lastLapTime.text = timer.lastTimeDisp.text;
+            }
+            else
+            {
+                lastLapTime.text = "--:--";
             }
 
             iLap.text = timer.GetNumLapsCompleted().ToString();
