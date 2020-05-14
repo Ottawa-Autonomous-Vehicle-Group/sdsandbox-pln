@@ -10,6 +10,7 @@ public class LapTimer : MonoBehaviour, IComparable<LapTimer>
     float currentStart = 0.0f; //milliseconds
     public TextMesh currentTimeDisp;
     public TextMesh bestTimeDisp;
+    public TextMesh lastTimeDisp;
     public TextMesh dqDisp;
     public string racerName;
 
@@ -17,6 +18,7 @@ public class LapTimer : MonoBehaviour, IComparable<LapTimer>
     {
         currentTimeDisp.gameObject.SetActive(false);
         bestTimeDisp.gameObject.SetActive(false);
+        lastTimeDisp.gameObject.SetActive(false);
         dqDisp.gameObject.SetActive(false);
     }
 
@@ -24,6 +26,7 @@ public class LapTimer : MonoBehaviour, IComparable<LapTimer>
     {
         currentTimeDisp.gameObject.SetActive(false);
         bestTimeDisp.gameObject.SetActive(false);
+        lastTimeDisp.gameObject.SetActive(false);
         dqDisp.gameObject.SetActive(false);
 
         bestTime = 100000.0f;
@@ -82,16 +85,20 @@ public class LapTimer : MonoBehaviour, IComparable<LapTimer>
         {
             float timeNow = GetCurrentMS();
             float lapTime = GetCurrentLapTime();
-            
-            lapTimes.Add(lapTime);
 
-            if (lapTime < bestTime)
+            if (lapTime > 50.0)
             {
-                bestTime = lapTime;
-                bestTimeDisp.text = (bestTime / 1000.0f).ToString("00.00");
-                bestTimeDisp.gameObject.SetActive(true);
-            }
+                lapTimes.Add(lapTime);
 
+                lastTimeDisp.text = (lapTime / 1000.0f).ToString("00.00");
+                lastTimeDisp.gameObject.SetActive(true);
+                if (lapTime < bestTime)
+                {
+                    bestTime = lapTime;
+                    bestTimeDisp.text = (bestTime / 1000.0f).ToString("00.00");
+                    bestTimeDisp.gameObject.SetActive(true);
+                }
+            }
             currentStart = timeNow;
         }
     }

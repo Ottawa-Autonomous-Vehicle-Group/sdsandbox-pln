@@ -18,7 +18,7 @@ public class FinishLine : MonoBehaviour
 
                 foreach(LapTimer t in status)
                 {
-                    Debug.Log("on timer collide w finish line.");
+                    Debug.Log("each timer collide w finish line. " + col.gameObject.name);
                     t.OnCollideFinishLine();
                 }
             }
