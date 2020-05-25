@@ -76,7 +76,7 @@ public class Competitor
         Debug.Log("Got car config message");
         carConfig = json;
 
-        //raceMan.AddCompetitor(this);
+        raceMan.AddCompetitor(this);
     }
 }
 
