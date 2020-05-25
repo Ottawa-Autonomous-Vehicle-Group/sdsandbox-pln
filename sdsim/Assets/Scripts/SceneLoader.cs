@@ -30,12 +30,12 @@ public void LoadGeneratedTrackScene()
     SceneManager.LoadSceneAsync(4);
 }
 
-public void LoadIronCar()
+public void LoadMountainTrackScene()
 {
     SceneManager.LoadSceneAsync(5);
-    }
+}
 
-public void LoadChicane()
+public void LoadChicaneScene()
 {
     SceneManager.LoadSceneAsync(6);
 }
