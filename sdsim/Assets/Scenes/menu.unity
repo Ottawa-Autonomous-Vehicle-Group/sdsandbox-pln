@@ -1192,7 +1192,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2140273047}
-        m_MethodName: LoadGeneratedTrackScene
+        m_MethodName: LoadChicaneTrackScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2388,7 +2388,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2140273047}
-        m_MethodName: LoadGeneratedTrackScene
+        m_MethodName: LoadMountainTrackScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3141,7 +3141,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2140273047}
-        m_MethodName: LoadGeneratedTrackScene
+        m_MethodName: LoadCircleTrackScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

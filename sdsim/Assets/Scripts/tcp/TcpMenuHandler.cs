@@ -113,16 +113,21 @@ namespace tk
             {
                 loader.LoadGeneratedTrackScene();
             }
-            else if (scene_name == "ironcar_track")
+            else if (scene_name == "mountain_track")
             {
-                loader.LoadIronCar();
+                loader.LoadMountainTrackScene();
             }
             else if (scene_name == "chicane_track")
             {
-                loader.LoadChicane();
+                loader.LoadChicaneTrackScene();
             }
+            else if (scene_name == "circle_track")
+            {
+                loader.LoadCircleTrackScene();
+            }
+
         }
-        
+
         void OnQuitApp(JSONObject json)
         {
             Application.Quit();
