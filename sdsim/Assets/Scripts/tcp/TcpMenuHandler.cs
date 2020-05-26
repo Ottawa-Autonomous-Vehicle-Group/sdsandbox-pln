@@ -119,11 +119,11 @@ namespace tk
             }
             else if (scene_name == "chicane_track")
             {
-                loader.LoadChicaneScene();
+                loader.LoadChicaneTrackScene();
             }
             else if (scene_name == "circle_track")
             {
-                loader.LoadCircleScene();
+                loader.LoadCircleTrackScene();
             }
 
         }

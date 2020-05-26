@@ -7713,7 +7713,7 @@ TerrainCollider:
   m_GameObject: {fileID: 1557414136}
   m_Material: {fileID: 0}
   m_Enabled: 1
-  m_TerrainData: {fileID: 15600000, guid: 6f67bd2732d267242bc753fbf983609c, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: b33a6b0019050bd4f8aa24cfd2162f47, type: 2}
   m_EnableTreeColliders: 1
 --- !u!218 &1557414139
 Terrain:
@@ -7724,7 +7724,7 @@ Terrain:
   m_GameObject: {fileID: 1557414136}
   m_Enabled: 1
   serializedVersion: 6
-  m_TerrainData: {fileID: 15600000, guid: 6f67bd2732d267242bc753fbf983609c, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: b33a6b0019050bd4f8aa24cfd2162f47, type: 2}
   m_TreeDistance: 5000
   m_TreeBillboardDistance: 50
   m_TreeCrossFadeLength: 5
@@ -9134,6 +9134,7 @@ MonoBehaviour:
   racerLayoutGroup: {fileID: 1102234119}
   racerSummaryPrefab: {fileID: 5513357303504393897, guid: a2f5c2bc2712499488c4a392e002d72f,
     type: 3}
+  racerSummaryFinalPrefab: {fileID: 0}
 --- !u!1 &1984162025
 GameObject:
   m_ObjectHideFlags: 0

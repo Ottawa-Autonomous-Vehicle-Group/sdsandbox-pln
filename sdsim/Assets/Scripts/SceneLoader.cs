@@ -35,11 +35,11 @@ public void LoadMountainTrackScene()
     SceneManager.LoadSceneAsync(5);
 }
 
-public void LoadChicaneScene()
+public void LoadChicaneTrackScene()
 {
     SceneManager.LoadSceneAsync(6);
 }
-public void LoadCircleScene()
+public void LoadCircleTrackScene()
 {
     SceneManager.LoadSceneAsync(7);
 }
